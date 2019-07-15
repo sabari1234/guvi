@@ -1,7 +1,7 @@
 a,b,c=input(" ").split()
 if (a>b)and(a>c):
-    print("a is largest")
+    print(a)
 elif (b>a)and(b>c):
-    print("a is largest")   
+    print(b)   
 else:
-    print("c is largest")
+    print(c)
