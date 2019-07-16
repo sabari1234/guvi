@@ -1,5 +1,5 @@
-a= int(input())
-b= int(input())
-for num in range(a +1, b):
-    if(num%2)==0:
-        print(num)
+a,b = map(int,input().split())
+oddlist = []
+for i in range(a+1,b):
+	if i%2==0:
+		print(i,end=" ")
