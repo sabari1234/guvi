@@ -1,13 +1,12 @@
-mm = int(input())
-nn = int(input())
-for num in range(mm, nn + 1):
-    order = len(str(num))
-    sum = 0
-    temp = num
-    while temp > 0:
-       digit = temp % 10
-       sum += digit ** order
-       temp //= 10
+def strong(n1):
+    sum0= 0
+    for i in n1:
+        sum0 += (int(i)**3)
+    return sum0
 
-    if num == sum:
-       print(num)
+nm1, nm2 = [int(x) for x in input().split()]
+a1 = []
+for i in range(nm1,nm2):
+    if (strong(str(i))==i):
+        a1.append(str(i))
+print(" ".join(a1))
