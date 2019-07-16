@@ -5,8 +5,8 @@ def strong(n1):
     return sum0
 
 nm1, nm2 = [int(x) for x in input().split()]
-a1 = []
+mano = []
 for i in range(nm1,nm2):
     if (strong(str(i))==i):
-        a1.append(str(i))
-print(" ".join(a1))
+        mano.append(str(i))
+print(" ".join(mano))
